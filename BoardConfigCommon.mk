@@ -110,6 +110,7 @@ BOARD_SEPOLICY_UNION += \
     rild.te \
     smc_pa.te \
     sysinit.te \
+    variant_setup.te \
     wpa_supplicant.te
 
 # Recovery
