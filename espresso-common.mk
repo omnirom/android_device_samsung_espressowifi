@@ -35,13 +35,15 @@ PRODUCT_PACKAGES += \
     init.espresso.sensors.rc \
     init.espresso.usb.rc \
     init.espresso.rc \
-    init.espresso.variant \
     ueventd.espresso.rc
 
 # Recovery Ramdisk
 PRODUCT_PACKAGES += \
     init.recovery.espresso.rc \
     twrp.fstab
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.espresso.variant.sh:system/bin/init.espresso.variant.sh
 
 # GPS
 # gps config appropriate for this device
