@@ -117,11 +117,7 @@ TARGET_RECOVERY_FSTAB := device/samsung/espresso/rootdir/etc/fstab.tab2
 RECOVERY_FSTAB_VERSION := 2
 
 # TWRP
-ifneq ($(filter p3100 p3110,$(TARGET_DEVICE)),)
-DEVICE_RESOLUTION := 1024x600
-else
 DEVICE_RESOLUTION := 1280x800
-endif
 HAVE_SELINUX := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
