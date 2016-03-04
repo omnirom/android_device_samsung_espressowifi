@@ -1,3 +1,4 @@
+import init.omap4.rc
 import init.espresso.sensors.rc
 import init.espresso.usb.rc
 
@@ -40,7 +41,6 @@ on fs
 
     # pvr module
     insmod /system/lib/modules/pvrsrvkm_sgx540_120.ko
-    start pvrsrvinit
 
     setprop ro.crypto.fuse_sdcard true
 
@@ -105,13 +105,6 @@ on boot
     chmod 0444 /proc/cmdline
 
     mount debugfs debugfs /sys/kernel/debug
-
-# initialize the SGX driver
-service pvrsrvinit /system/bin/pvrsrvinit
-    class core
-    user root
-    group root
-    oneshot
 
 # SMC Service
 service tf_daemon /system/bin/tf_daemon \
