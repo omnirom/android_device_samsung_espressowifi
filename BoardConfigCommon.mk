@@ -106,8 +106,6 @@ BOARD_SEPOLICY_UNION += \
     init.te \
     orientationd.te \
     pvrsrvinit.te \
-    radio.te \
-    rild.te \
     smc_pa.te \
     sysinit.te \
     variant_setup.te \
