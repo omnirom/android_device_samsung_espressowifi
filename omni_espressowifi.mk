@@ -18,10 +18,10 @@
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
 
 # OmniRom specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso/overlay/custom-common
+DEVICE_PACKAGE_OVERLAYS += device/samsung/espressowifi/overlay/custom-common
 
 # Inherit device specific configuration
-$(call inherit-product, device/samsung/espresso/aosp_espresso.mk)
+$(call inherit-product, device/samsung/espressowifi/aosp_espressowifi.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_espresso
+PRODUCT_NAME := omni_espressowifi

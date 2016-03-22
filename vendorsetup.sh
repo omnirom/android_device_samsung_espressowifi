@@ -1,1 +1,1 @@
-add_lunch_combo omni_espresso-userdebug
+add_lunch_combo omni_espressowifi-userdebug
