@@ -45,13 +45,10 @@
        LbsWlanEnable="false"
 
        IgnoreJniTime="true"
-
+       
        SensorsEnable="false"
        SensorsPowerSave="false"
        SensorsLog="false"
-
-       AssertEnabled="false"
-       SensorsBaroEnable="false"
 
    />
 
