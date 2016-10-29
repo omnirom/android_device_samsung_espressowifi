@@ -86,6 +86,7 @@ BOARD_SEPOLICY_UNION += \
     file.te \
     device.te \
     domain.te \
+    healthd.te \
     property_contexts \
     property.te \
     pvrsrvinit.te \
