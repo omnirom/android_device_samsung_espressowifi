@@ -32,3 +32,13 @@ TW_EXCLUDE_MTP := true
 
 # Charging mode
 BOARD_CHARGER_RES := device/samsung/espressowifi/res/charger
+
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+    device/samsung/espressowifi/sepolicy-custom
+
+BOARD_SEPOLICY_UNION += \
+    file_contexts \
+    property_contexts \
+    property.te \
+    variant_setup.te
