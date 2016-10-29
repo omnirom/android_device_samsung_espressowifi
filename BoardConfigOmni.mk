@@ -28,3 +28,13 @@ TW_INCLUDE_CRYPTO := true
 TW_MAX_BRIGHTNESS := 255
 TW_NO_CPU_TEMP := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+    device/samsung/espressowifi/sepolicy-custom
+
+BOARD_SEPOLICY_UNION += \
+    file_contexts \
+    property.te \
+    property_contexts \
+    variant_setup.te
