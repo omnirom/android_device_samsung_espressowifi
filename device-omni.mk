@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,12 @@
 # limitations under the License.
 #
 
-# Include common espresso BoardConfig
-include device/samsung/espressowifi/BoardConfigCommon.mk
+LOCAL_PATH := device/samsung/espressowifi
 
-# assert
-TARGET_OTA_ASSERT_DEVICE := p3110,GT-P3110,p3113,GT-P3113,espressowifi,espressowifixx,p5110,GT-P5110,p5113,GT-P5113,espresso10wifi,espresso10wifixx,espresso-common
+# Recovery Ramdisk
+PRODUCT_PACKAGES += \
+    $(LOCAL_PATH)/recovery/root/init.recovery.espresso.rc:recovery/root/init.recovery.espresso.rc \
+    $(LOCAL_PATH)/recovery/root/etc/twrp.fstab:recovery/root/etc/twrp.fstab
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.espresso.variant.sh:system/bin/init.espresso.variant.sh
