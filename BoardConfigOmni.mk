@@ -6,6 +6,10 @@ BOARD_VOLD_MAX_PARTITIONS := 12
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
 
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/"
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
+
 # Recovery
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/f_mass_storage/lun0/file"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/f_mass_storage/lun%d/file"
