@@ -14,7 +14,7 @@ KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi-
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/f_mass_storage/lun0/file"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/f_mass_storage/lun%d/file"
 TARGET_RECOVERY_DEVICE_DIRS += device/samsung/espressowifi
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/espressowifi/custombootimg.mk
+LZMA_RAMDISK_TARGETS := recovery
 
 # TWRP
 TW_THEME := landscape_hdpi
