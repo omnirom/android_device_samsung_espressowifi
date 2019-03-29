@@ -4,6 +4,9 @@ TARGET_BOOTANIMATION_USE_RGB565 := true
 # F2FS filesystem
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Disable dex-preoptimization
+WITH_DEXPREOPT := false
+
 # Vold
 BOARD_VOLD_MAX_PARTITIONS := 12
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
