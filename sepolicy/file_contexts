@@ -25,9 +25,6 @@
 # Wifi
 /efs/wifi/.mac.info                         u:object_r:wifi_data_file:s0
 
-# System binaries
-/system/vendor/bin/pvrsrvctl_SGX540_120     u:object_r:pvrsrvinit_exec:s0
-
 # Firmwares
 /system/vendor/firmware/ducati-m3.bin       u:object_r:firmware_ducati:s0
 
